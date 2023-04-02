@@ -72,6 +72,9 @@ def run_ecs_fargate(cluster_name, task_definition, subreddit):
                         },{
                             'name': 'DB_LAST_ARCHIVED_ATTR_NAME',
                             'value': os.environ['DB_LAST_ARCHIVED_ATTR_NAME']
+                        },{
+                            'name': 'BUCKET_NAME',
+                            'value': os.environ['BUCKET_NAME']
                         }
                     ]
                 }
